@@ -1,0 +1,475 @@
+desc: --massif-out-file=encrypt/memory-8-10-6.log
+cmd: ./p-norm-ipe-test encrypt 8 10 6
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=3488605
+mem_heap_B=32733
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=11013850
+mem_heap_B=32733
+mem_heap_extra_B=771
+mem_stacks_B=0
+heap_tree=detailed
+n7: 32733 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n1: 8192 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+  n1: 8192 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+   n0: 8192 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 2700 0x24B812: __gmp_default_allocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n1: 520 0x4ADE1F0: __new_exitfn (cxa_atexit.c:114)
+  n1: 520 0x4ADE264: __internal_atexit (cxa_atexit.c:44)
+   n0: 520 0x251574: __libc_csu_init (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n1: 513 0x49658F2: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+  n0: 513 0x495D556: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n1: 352 0x4AFE6FA: __fopen_internal (iofopen.c:65)
+  n1: 352 0x490F2C6: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+   n1: 352 0x493FFD4: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+    n0: 352 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 232 in 7 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=3
+#-----------
+time=18180925
+mem_heap_B=30513
+mem_heap_extra_B=743
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=26899192
+mem_heap_B=54849
+mem_heap_extra_B=1031
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=30921670
+mem_heap_B=69129
+mem_heap_extra_B=1143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=36663818
+mem_heap_B=89529
+mem_heap_extra_B=1303
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=41259304
+mem_heap_B=105849
+mem_heap_extra_B=1431
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=48168072
+mem_heap_B=128481
+mem_heap_extra_B=1615
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=57358086
+mem_heap_B=161121
+mem_heap_extra_B=1871
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=64822686
+mem_heap_B=187641
+mem_heap_extra_B=2079
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=70429670
+mem_heap_B=375609
+mem_heap_extra_B=3575
+mem_stacks_B=0
+heap_tree=peak
+n5: 375609 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 310464 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 310464 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 155232 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 155232 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 155232 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 32256 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n1: 8192 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+  n1: 8192 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+   n0: 8192 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 4473 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=77264066
+mem_heap_B=216260
+mem_heap_extra_B=3172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=101579057
+mem_heap_B=216584
+mem_heap_extra_B=3200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=106681363
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=111666428
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=121066103
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=detailed
+n6: 216788 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 158928 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 158928 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 157080 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 157080 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 1848 in 1 place, below massif's threshold (1.00%)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 16512 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 12096 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 5980 in 50 places, all below massif's threshold (1.00%)
+ n0: 3048 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+#-----------
+snapshot=17
+#-----------
+time=125898389
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=130769771
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=135501090
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=144983764
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=152552997
+mem_heap_B=216584
+mem_heap_extra_B=3200
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=157668993
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=162563647
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=167457062
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=detailed
+n6: 216788 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 158928 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 158928 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 157080 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 157080 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 1848 in 1 place, below massif's threshold (1.00%)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 16512 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 12096 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 5980 in 50 places, all below massif's threshold (1.00%)
+ n0: 3048 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+#-----------
+snapshot=25
+#-----------
+time=172172743
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=177166023
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=182029658
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=187042015
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=192057959
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=196949405
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=203252458
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=208149927
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=213180739
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=detailed
+n6: 217028 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 158928 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 158928 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 157080 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 157080 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 1848 in 1 place, below massif's threshold (1.00%)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 16512 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 12096 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 6012 in 50 places, all below massif's threshold (1.00%)
+ n0: 3256 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+#-----------
+snapshot=34
+#-----------
+time=222664351
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=227506800
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=232402447
+mem_heap_B=217028
+mem_heap_extra_B=3332
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=238866926
+mem_heap_B=217028
+mem_heap_extra_B=3324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=243760920
+mem_heap_B=217028
+mem_heap_extra_B=3324
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=253084427
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=260338838
+mem_heap_B=216584
+mem_heap_extra_B=3200
+mem_stacks_B=0
+heap_tree=detailed
+n6: 216584 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 158928 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 158928 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 157080 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 157080 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 1848 in 1 place, below massif's threshold (1.00%)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 16512 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 12096 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 5952 in 50 places, all below massif's threshold (1.00%)
+ n0: 2872 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+#-----------
+snapshot=41
+#-----------
+time=265125634
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=269945682
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=279264256
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=284309417
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=289135190
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=294266541
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=299180087
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=304156101
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=313665677
+mem_heap_B=216788
+mem_heap_extra_B=3252
+mem_stacks_B=0
+heap_tree=empty

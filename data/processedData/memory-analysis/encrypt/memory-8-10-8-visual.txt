@@ -1,0 +1,226 @@
+--------------------------------------------------------------------------------
+Command:            ./p-norm-ipe-test encrypt 8 10 8
+Massif arguments:   --massif-out-file=encrypt/memory-8-10-8.log
+ms_print arguments: encrypt/memory-8-10-8.log
+--------------------------------------------------------------------------------
+
+
+    KB
+673.0^                  ##                                                    
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  #                                                     
+     |                  # ::::::::::::::@@:::::::::::::::::::::::::::::@::::::
+     |                  # :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |                 :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |               @@:# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |             ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |             ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |          :::::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |        @@:: ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |      ::@ :: ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |     :::@ :: ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+     |   :::::@ :: ::@ :# :   : :: :: ::@ :: ::: : ::: :: : : ::: ::: :@::::::
+   0 +----------------------------------------------------------------------->Mi
+     0                                                                   424.1
+
+Number of snapshots: 58
+ Detailed snapshots: [1, 7, 12, 14 (peak), 25, 50]
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  0              0                0                0             0            0
+  1     11,013,850           33,504           32,733           771            0
+97.70% (32,733B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->60.36% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->24.45% (8,192B) 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| ->24.45% (8,192B) 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   ->24.45% (8,192B) 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|     
+->08.06% (2,700B) 0x24B812: __gmp_default_allocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->01.55% (520B) 0x4ADE1F0: __new_exitfn (cxa_atexit.c:114)
+| ->01.55% (520B) 0x4ADE264: __internal_atexit (cxa_atexit.c:44)
+|   ->01.55% (520B) 0x251574: __libc_csu_init (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|     
+->01.53% (513B) 0x49658F2: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::reserve(unsigned int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| ->01.53% (513B) 0x495D556: std::__cxx11::basic_stringbuf<char, std::char_traits<char>, std::allocator<char> >::overflow(int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   
+->01.05% (352B) 0x4AFE6FA: __fopen_internal (iofopen.c:65)
+| ->01.05% (352B) 0x490F2C6: std::__basic_file<char>::open(char const*, std::_Ios_Openmode, int) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   ->01.05% (352B) 0x493FFD4: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|     ->01.05% (352B) 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|       
+->00.69% (232B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  2     18,180,925           31,256           30,513           743            0
+  3     23,653,394           43,784           42,873           911            0
+  4     32,388,904           74,848           73,761         1,087            0
+  5     41,917,645          108,736          107,457         1,279            0
+  6     48,268,273          131,328          129,921         1,407            0
+  7     53,941,118          156,128          154,585         1,543            0
+99.01% (154,585B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->71.47% (111,584B) 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+| ->71.47% (111,584B) 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+|   ->68.65% (107,184B) 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+|   | ->68.65% (107,184B) 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|   |   
+|   ->02.82% (4,400B) 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|     
+->12.95% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->06.89% (10,752B) 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->05.25% (8,192B) 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| ->05.25% (8,192B) 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   ->05.25% (8,192B) 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|     
+->02.46% (3,833B) in 24 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+  8     62,558,095          182,352          180,657         1,695            0
+  9     69,988,339          205,016          203,185         1,831            0
+ 10     81,105,673          244,552          242,497         2,055            0
+ 11     88,249,115          269,968          267,769         2,199            0
+ 12     98,569,079          306,680          304,273         2,407            0
+99.22% (304,273B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->80.60% (247,192B) 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+| ->80.60% (247,192B) 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+|   ->48.98% (150,216B) 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|   | 
+|   ->31.62% (96,976B) 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+|     ->31.62% (96,976B) 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|       
+->08.01% (24,576B) 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->06.59% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->02.67% (8,192B) 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| ->02.67% (8,192B) 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   ->02.67% (8,192B) 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|     
+->01.33% (4,089B) in 25 places, all below massif's threshold (1.00%)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 13    107,303,563          337,744          335,161         2,583            0
+ 14    115,615,796          689,200          684,601         4,599            0
+99.33% (684,601B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->85.91% (592,064B) 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+| ->85.91% (592,064B) 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+|   ->42.95% (296,032B) 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|   | 
+|   ->42.95% (296,032B) 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+|     ->42.95% (296,032B) 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|       
+->08.62% (59,392B) 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->02.93% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->01.19% (8,192B) 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| ->01.19% (8,192B) 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|   ->01.19% (8,192B) 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+|     
+->00.69% (4,729B) in 1+ places, all below ms_print's threshold (01.00%)
+
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 15    123,544,990          362,840          358,977         3,863            0
+ 16    129,330,843          381,912          377,996         3,916            0
+ 17    148,233,832          381,928          378,000         3,928            0
+ 18    153,252,693          382,184          378,204         3,980            0
+ 19    162,811,140          382,184          378,204         3,980            0
+ 20    172,640,058          382,184          378,204         3,980            0
+ 21    182,544,488          382,184          378,204         3,980            0
+ 22    190,281,437          382,504          378,444         4,060            0
+ 23    200,082,972          382,504          378,444         4,060            0
+ 24    205,007,381          382,504          378,444         4,060            0
+ 25    214,784,562          382,504          378,444         4,060            0
+98.94% (378,444B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->78.73% (301,136B) 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+| ->78.73% (301,136B) 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+|   ->78.06% (298,584B) 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+|   | ->78.06% (298,584B) 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|   |   
+|   ->00.67% (2,552B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->07.90% (30,208B) 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->05.29% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->04.37% (16,704B) 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->01.66% (6,340B) in 52 places, all below massif's threshold (1.00%)
+| 
+->01.00% (3,832B) 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 26    224,482,323          382,504          378,444         4,060            0
+ 27    233,819,999          382,504          378,444         4,060            0
+ 28    243,551,689          382,504          378,444         4,060            0
+ 29    248,625,685          382,504          378,444         4,060            0
+ 30    258,182,014          382,504          378,444         4,060            0
+ 31    265,784,631          382,504          378,444         4,060            0
+ 32    270,668,017          382,504          378,444         4,060            0
+ 33    280,434,730          382,504          378,444         4,060            0
+ 34    289,745,050          382,816          378,684         4,132            0
+ 35    294,708,147          382,816          378,684         4,132            0
+ 36    304,354,355          382,816          378,684         4,132            0
+ 37    314,295,448          382,816          378,684         4,132            0
+ 38    324,267,008          382,816          378,684         4,132            0
+ 39    333,911,275          382,816          378,684         4,132            0
+ 40    338,811,191          382,816          378,684         4,132            0
+ 41    348,537,837          382,816          378,684         4,132            0
+ 42    353,476,686          382,816          378,684         4,132            0
+ 43    361,402,490          382,504          378,444         4,060            0
+ 44    371,007,241          382,504          378,444         4,060            0
+ 45    375,919,428          382,504          378,444         4,060            0
+ 46    382,410,361          382,504          378,444         4,060            0
+ 47    387,238,897          382,504          378,444         4,060            0
+ 48    396,786,524          382,504          378,444         4,060            0
+ 49    401,800,438          382,504          378,444         4,060            0
+ 50    406,698,376          382,504          378,444         4,060            0
+98.94% (378,444B) (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+->78.73% (301,136B) 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+| ->78.73% (301,136B) 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+|   ->78.06% (298,584B) 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+|   | ->78.06% (298,584B) 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+|   |   
+|   ->00.67% (2,552B) in 1+ places, all below ms_print's threshold (01.00%)
+|   
+->07.90% (30,208B) 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->05.29% (20,224B) 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+| 
+->04.37% (16,704B) 0x16AEC4: mcl::Array<mcl::EcT<mcl::Fp2T<mcl::FpT<mcl::bn::local::FpTag, 384u> > > >::resize(unsigned int) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+| 
+->01.66% (6,340B) in 52 places, all below massif's threshold (1.00%)
+| 
+->01.00% (3,832B) 0x24B84C: __gmp_default_reallocate (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+  
+--------------------------------------------------------------------------------
+  n        time(i)         total(B)   useful-heap(B) extra-heap(B)    stacks(B)
+--------------------------------------------------------------------------------
+ 51    411,567,697          382,328          378,304         4,024            0
+ 52    419,554,114          382,192          378,204         3,988            0
+ 53    424,384,924          382,264          378,252         4,012            0
+ 54    429,213,724          382,392          378,352         4,040            0
+ 55    434,112,009          382,184          378,204         3,980            0
+ 56    439,272,783          382,184          378,204         3,980            0
+ 57    444,674,041          398,624          394,700         3,924            0

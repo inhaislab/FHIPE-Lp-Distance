@@ -1,0 +1,656 @@
+desc: --massif-out-file=keygen/memory-128-10-6.log
+cmd: ./p-norm-ipe-test keygen 128 10 6
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=149872738
+mem_heap_B=489193
+mem_heap_extra_B=1159
+mem_stacks_B=0
+heap_tree=detailed
+n5: 489193 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 417472 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 417472 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 395472 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 395472 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 22000 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 36288 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n1: 8192 0x493D6C6: std::basic_filebuf<char, std::char_traits<char> >::_M_allocate_internal_buffer() (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+  n1: 8192 0x493FFE2: std::basic_filebuf<char, std::char_traits<char> >::open(char const*, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+   n0: 8192 0x49409EA: std::basic_ifstream<char, std::char_traits<char> >::basic_ifstream(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::_Ios_Openmode) (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 7017 in 24 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=2
+#-----------
+time=395551023
+mem_heap_B=1357113
+mem_heap_extra_B=1623
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=554356574
+mem_heap_B=1945465
+mem_heap_extra_B=1935
+mem_stacks_B=0
+heap_tree=detailed
+n4: 1945465 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1751728 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 1751728 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 1723128 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 1723128 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 158112 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 20224 0x48F4F42: ??? (in /usr/lib/arm-linux-gnueabihf/libstdc++.so.6.0.26)
+ n0: 15401 in 26 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=4
+#-----------
+time=825607514
+mem_heap_B=2901505
+mem_heap_extra_B=2431
+mem_stacks_B=0
+heap_tree=detailed
+n3: 2901505 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 2627416 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 2627416 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 2598816 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 2598816 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 238464 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 35625 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=1018115248
+mem_heap_B=3580193
+mem_heap_extra_B=2783
+mem_stacks_B=0
+heap_tree=detailed
+n3: 3580193 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 3248872 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 3248872 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 3220272 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 3220272 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 295488 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 35833 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=6
+#-----------
+time=1383618577
+mem_heap_B=4838337
+mem_heap_extra_B=3415
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=1683105643
+mem_heap_B=5924337
+mem_heap_extra_B=3999
+mem_stacks_B=0
+heap_tree=detailed
+n3: 5924337 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 5395720 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 5395720 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 5367120 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 5367120 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 492480 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 36137 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=1901871310
+mem_heap_B=6680401
+mem_heap_extra_B=4343
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2199372910
+mem_heap_B=7744361
+mem_heap_extra_B=4943
+mem_stacks_B=0
+heap_tree=detailed
+n3: 7744361 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7062352 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 7062352 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 7033752 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 7033752 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 645408 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 36601 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=2409363290
+mem_heap_B=8484521
+mem_heap_extra_B=5327
+mem_stacks_B=0
+heap_tree=detailed
+n3: 8484521 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 7740304 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 7740304 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 7711704 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 7711704 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 707616 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 36601 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=2741870139
+mem_heap_B=9657129
+mem_heap_extra_B=5935
+mem_stacks_B=0
+heap_tree=detailed
+n3: 9657129 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 8813728 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 8813728 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 8785128 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 8785128 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 806112 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=12
+#-----------
+time=2978109744
+mem_heap_B=10487609
+mem_heap_extra_B=6359
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=3301877207
+mem_heap_B=11630889
+mem_heap_extra_B=6959
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11630889 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 10621600 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 10621600 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 10593000 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 10593000 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 972000 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=3555624834
+mem_heap_B=12525249
+mem_heap_extra_B=7423
+mem_stacks_B=0
+heap_tree=detailed
+n3: 12525249 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 11440792 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 11440792 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 11412192 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 11412192 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1047168 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=3722544244
+mem_heap_B=13082105
+mem_heap_extra_B=7631
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=3949355840
+mem_heap_B=13913049
+mem_heap_extra_B=8143
+mem_stacks_B=0
+heap_tree=detailed
+n3: 13913049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 12711952 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 12711952 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 12683352 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 12683352 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1163808 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=17
+#-----------
+time=4168100892
+mem_heap_B=14684049
+mem_heap_extra_B=8543
+mem_stacks_B=0
+heap_tree=detailed
+n3: 14684049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 13418152 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 13418152 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 13389552 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 13389552 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1228608 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=4386848950
+mem_heap_B=15455049
+mem_heap_extra_B=8943
+mem_stacks_B=0
+heap_tree=detailed
+n3: 15455049 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 14124352 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 14124352 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 14095752 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 14095752 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1293408 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37289 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=4640607739
+mem_heap_B=16350449
+mem_heap_extra_B=9407
+mem_stacks_B=0
+heap_tree=detailed
+n3: 16350449 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 14943544 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 14943544 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 14914944 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 14914944 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1368576 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 38329 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=4903116108
+mem_heap_B=17275649
+mem_heap_extra_B=9887
+mem_stacks_B=0
+heap_tree=detailed
+n3: 17275649 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 15790984 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 15790984 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 15762384 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 15762384 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1446336 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 38329 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=5113107542
+mem_heap_B=18015809
+mem_heap_extra_B=10271
+mem_stacks_B=0
+heap_tree=detailed
+n3: 18015809 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16468936 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 16468936 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 16440336 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 16440336 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1508544 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 38329 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=5454328724
+mem_heap_B=19218569
+mem_heap_extra_B=10895
+mem_stacks_B=0
+heap_tree=detailed
+n3: 19218569 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 17570608 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 17570608 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 17542008 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 17542008 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28600 in 1 place, below massif's threshold (1.00%)
+ n0: 1609632 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 38329 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=5679287486
+mem_heap_B=39636361
+mem_heap_extra_B=21399
+mem_stacks_B=0
+heap_tree=detailed
+n3: 39636361 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 36270432 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 36270432 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 36270432 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 36270432 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 3328128 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37801 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=5874739969
+mem_heap_B=20259185
+mem_heap_extra_B=11423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=6180979251
+mem_heap_B=21338585
+mem_heap_extra_B=11983
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=6548513398
+mem_heap_B=22634057
+mem_heap_extra_B=12655
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=6916043497
+mem_heap_B=23929545
+mem_heap_extra_B=13327
+mem_stacks_B=0
+heap_tree=detailed
+n3: 23929545 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 21885952 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 21885952 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 18157216 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 3728736 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 3728736 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 2006208 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 37385 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=7222945574
+mem_heap_B=25010289
+mem_heap_extra_B=13887
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=7599172222
+mem_heap_B=26336873
+mem_heap_extra_B=14575
+mem_stacks_B=0
+heap_tree=detailed
+n3: 26336873 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 24089296 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 24089296 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 18157216 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 5932080 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 5932080 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 2208384 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 39193 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=30
+#-----------
+time=7885910414
+mem_heap_B=27349153
+mem_heap_extra_B=15087
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=8077059372
+mem_heap_B=28022545
+mem_heap_extra_B=15423
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=8363756595
+mem_heap_B=29030697
+mem_heap_extra_B=15919
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=8554907329
+mem_heap_B=29734361
+mem_heap_extra_B=16351
+mem_stacks_B=0
+heap_tree=detailed
+n3: 29734361 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 27200976 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 27200976 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 18161616 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 9039360 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 9039360 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 2493504 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 39881 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=34
+#-----------
+time=8841648159
+mem_heap_B=30716841
+mem_heap_extra_B=16847
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=9032792692
+mem_heap_B=31392081
+mem_heap_extra_B=17191
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=9223925687
+mem_heap_B=32063961
+mem_heap_extra_B=17519
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=9511289758
+mem_heap_B=33076593
+mem_heap_extra_B=18031
+mem_stacks_B=0
+heap_tree=detailed
+n3: 33076593 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 30262408 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 30262408 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 18144016 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 12118392 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 12118392 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 2776032 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 38153 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=38
+#-----------
+time=9702427065
+mem_heap_B=33749905
+mem_heap_extra_B=18367
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=9893578328
+mem_heap_B=34452881
+mem_heap_extra_B=18799
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=10180322013
+mem_heap_B=35436401
+mem_heap_extra_B=19295
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=10467023325
+mem_heap_B=36448681
+mem_heap_extra_B=19807
+mem_stacks_B=0
+heap_tree=detailed
+n3: 36448681 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 33350240 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 33350240 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 18152816 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 15197424 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 15197424 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 3058560 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 39881 in 27 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=10658159205
+mem_heap_B=37122073
+mem_heap_extra_B=20143
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=10849300174
+mem_heap_B=37793489
+mem_heap_extra_B=20471
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=11040435197
+mem_heap_B=38467057
+mem_heap_extra_B=20807
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=11231622920
+mem_heap_B=39143801
+mem_heap_extra_B=21239
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=11571727862
+mem_heap_B=79240089
+mem_heap_extra_B=41975
+mem_stacks_B=0
+heap_tree=peak
+n3: 79240089 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 72540864 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 72540864 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n0: 36270432 0x16C5A0: void NTL::VecStrategy<true>::do_BlockConstruct<NTL::ZZ_p>(NTL::ZZ_p*, long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n1: 36270432 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 36270432 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 6656256 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 42969 in 28 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=47
+#-----------
+time=11788702779
+mem_heap_B=39720782
+mem_heap_extra_B=21754
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=11981793184
+mem_heap_B=39815754
+mem_heap_extra_B=30502
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=12271499163
+mem_heap_B=39815898
+mem_heap_extra_B=30542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=12421452777
+mem_heap_B=39815898
+mem_heap_extra_B=30542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=12573234959
+mem_heap_B=39815898
+mem_heap_extra_B=30542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=12725165421
+mem_heap_B=39815898
+mem_heap_extra_B=30550
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=12875865021
+mem_heap_B=39815754
+mem_heap_extra_B=30502
+mem_stacks_B=0
+heap_tree=detailed
+n3: 39815754 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 36326928 0x20664E: _ntl_gblock_construct_alloc(_ntl_gbigint_body**, long, long) (lip.cpp:6279)
+  n2: 36326928 0x228994: NTL::BasicBlockConstruct(NTL::ZZ_p*, long, long) (ZZ.h:1041)
+   n1: 36298680 0x228A36: NTL::BlockConstructFromVec(NTL::ZZ_p*, long, NTL::ZZ_p const*) (vec_ZZ_p.cpp:43)
+    n0: 36298680 0x16C17C: void NTL::VecStrategy<true>::do_BlockConstructFromVec<NTL::ZZ_p>(NTL::ZZ_p*, long, NTL::ZZ_p const*) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+   n0: 28248 in 1 place, below massif's threshold (1.00%)
+ n0: 3333312 0x16B152: NTL::Vec<NTL::ZZ_p>::AllocateTo(long) (in /home/reti/dongHyeon/Function-hiding-IPE/build/bin/p-norm-ipe-test)
+ n0: 155514 in 55 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=54
+#-----------
+time=13027104073
+mem_heap_B=39815898
+mem_heap_extra_B=30542
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=13177689813
+mem_heap_B=39815898
+mem_heap_extra_B=30550
+mem_stacks_B=0
+heap_tree=empty
